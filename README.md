@@ -1,16 +1,15 @@
 # sns-post
 
-把一件事做成小红书、抖音或 TikTok 的帖子、图文与视频。这是一份给 AI agent 用的技能，也适合人直接照着做。
+把一件事做成小红书或抖音的帖子、图文与视频。这是一份给 AI agent 用的技能，也适合人直接照着做。
 
-A skill for turning one finished project into ready-to-publish Xiaohongshu, Douyin and TikTok posts: copy, 3:4 cards, vertical video, covers, safe areas and pre-publish checks.
+A skill for turning one finished project into ready-to-publish Xiaohongshu and Douyin posts: copy, 3:4 cards, vertical video, covers, safe areas and pre-publish checks.
 
 ## 里面有什么
 
 | 文件 | 内容 |
 |---|---|
-| `SKILL.md` | 主流程：定角度、写作原则、三渠道规格、素材目录、卡片与视频管线、安全区、平台规则、发布前检查 |
-| `references/writing.md` | 通用文案规范、中文标点、小红书文案、日语文书的完整要求 |
-| `references/japanese-calques.md` | 中文式日语对照，写日语简历和正式文书时用 |
+| `SKILL.md` | 主流程：定角度、写作原则、两渠道规格、素材目录、卡片与视频管线、安全区、平台规则、发布前检查 |
+| `references/writing.md` | 通用文案规范、中文标点和小红书文案的完整要求 |
 | `scripts/gen_cards.py` | 1080×1440 卡片生成器模板：HTML 排版、Chrome headless 截图、溢出检查 |
 | `scripts/render_cards.sh` | 调用生成器的 shell 入口 |
 
@@ -19,7 +18,7 @@ A skill for turning one finished project into ready-to-publish Xiaohongshu, Douy
 - 动笔前先定角度。过程向讲经过，结果向直接摆发现，两种都不写成报告的通俗版。
 - 读者分两层。普通人看得懂，内行挑不出错；保留几处靠常识就能懂的工程细节。
 - 不写成吹捧。留下 AI 出错、结论被推翻的部分，或者用结果本身的反差。
-- 三个渠道平等。同一内容共用一套素材与生成器，各渠道按自己的画布和安全区出成品。
+- 两个渠道各自独立。同一内容共用一套素材与生成器，各渠道按自己的画布和安全区出成品。
 - 图卡、视频、封面都有可执行的尺寸与检查方法，不靠肉眼估。
 - 发布前查隐私、平台规则和 AI 内容声明。
 
